@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Le Message du Temps de la Fin – Application Android officielle | Urbasoft</title>
+  <meta name="description" content="Application Android officielle dédiée au Message du Temps de la Fin. Citations complètes du prophète William Marrion Branham (VGR, SHP, SUISSE), audio, soulignage, partage et recherche intelligente." />
+  <meta name="keywords" content="Message du Temps de la Fin, William Marrion Branham, application chrétienne Android, citations Branham, VGR SHP SUISSE, Urbasoft" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Le Message du Temps de la Fin – Application Android officielle" />
+  <meta property="og:description" content="Découvrez l'application Android dédiée au Message du Temps de la Fin." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Font Awesome (icônes réseaux sociaux) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #1e3c72;
+      --secondary: #2a5298;
+      --light: #f4f6fb;
+      --dark: #1a1a1a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.8;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img.cover {
+      width: 180px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin: 10px 0;
+    }
+
+    .certified {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .95rem;
+      margin-bottom: 15px;
+    }
+
+    .certified span {
+      background: #1877f2;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: .8rem;
+    }
+
+    header p {
+      max-width: 750px;
+      font-size: 1.15rem;
+      opacity: .95;
+    }
+
+    .stats {
+      display: flex;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    .btn-play {
+      margin-top: 20px;
+      background: #fff;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      transition: transform .3s ease;
+    }
+
+    .btn-play:hover {
+      transform: translateY(-4px);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .features, .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all .6s ease;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+    .detail {
+      background: #fff;
+    }
+
+    .detail-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .detail-content p {
+      margin-bottom: 22px;
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all .7s ease;
+    }
+
+    .detail-content.show p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .socials {
+      margin-top: 15px;
+    }
+
+    .socials a {
+      color: #cbd5e1;
+      font-size: 22px;
+      margin: 0 12px;
+      transition: color .3s ease;
+    }
+
+    .socials a:hover {
+      color: #38bdf8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.1rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="branham.jpg" alt="William Marrion Branham" class="cover">
+
+  <h1>Le Message du Temps de la Fin</h1>
+
+  <div class="certified">
+    <span>✔ Certifié</span> Bleu officiel
+  </div>
+
+  <p>
+    Application Android officielle dédiée au Message du Temps de la Fin,
+    avec toutes les citations du prophète William Marrion Branham.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><strong>100 000+</strong>Téléchargements</div>
+    <div class="stat"><strong>★★★★★</strong>Note 5.0</div>
+    <div class="stat"><strong>76 Mo</strong>Taille</div>
+  </div>
+
+  <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.urbasoft.lemessage" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="150" alt="Google Play">
+  </a>
+</header>
+
+<section>
+  <h2>Fonctionnalités avancées</h2>
+  <div class="features">
+    <div class="card">Soulignage et sauvegarde sécurisée</div>
+    <div class="card">Export et partage des citations</div>
+    <div class="card">Audio intégré du Message</div>
+    <div class="card">Recherche intelligente rapide</div>
+    <div class="card">Police et taille personnalisables</div>
+    <div class="card">Traductions VGR – SHP – SUISSE</div>
+  </div>
+</section>
+
+<section>
+  <h2>Captures d’écran</h2>
+  <div class="screenshots">
+    <img src="sc1.jpg" alt="Capture 1">
+    <img src="sc2.jpg" alt="Capture 2">
+    <img src="sc3.jpg" alt="Capture 3">
+    <img src="sc4.jpg" alt="Capture 4">
+    <img src="sc5.jpg" alt="Capture 5">
+    <img src="sc6.jpg" alt="Capture 6">
+    <img src="sc7.jpg" alt="Capture 7">
+    <img src="sc8.jpg" alt="Capture 8">
+    <img src="sc9.jpg" alt="Capture 9">
+    <img src="sc10.jpg" alt="Capture 10">
+  </div>
+</section>
+
+<section class="detail">
+  <h2>Description détaillée</h2>
+  <div class="detail-content">
+    <p><strong>Le Message du Temps de la Fin</strong> est une application Android entièrement dédiée au Message du prophète William Marrion Branham.</p>
+    <p>Elle permet d’accéder à toutes les citations officielles avec trois traductions majeures : VGR, SHP et SUISSE.</p>
+    <p>Un moteur de recherche intelligent permet de retrouver rapidement une citation précise sans ralentir le téléphone.</p>
+    <p>La fonction de soulignage avancé sauvegarde automatiquement vos passages importants, même après un changement de téléphone.</p>
+    <p>Les citations peuvent être exportées et partagées facilement sur les réseaux sociaux.</p>
+    <p>L’utilisateur peut personnaliser l’arrière-plan, la taille du texte et la police pour une lecture confortable.</p>
+    <p>Une fonction audio intégrée permet d’écouter le Message à tout moment.</p>
+    <p>Avec plus de 100 000 téléchargements et une note de 5 étoiles, l’application est une référence moderne et fiable.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Urbasoft – Le Message du Temps de la Fin</p>
+  <div class="socials">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></ a>
+  </div>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  const detail = document.querySelector('.detail-content');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => observer.observe(card));
+  observer.observe(detail);
+</script>
+
+</body>
+</html>
