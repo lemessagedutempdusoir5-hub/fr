@@ -13,10 +13,10 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Le Message du Temps de la Fin – Application Android officielle" />
   <meta property="og:description" content="Découvrez l'application Android dédiée au Message du Temps de la Fin." />
-  <meta property="og:image" content="logo.png" />
+  <meta property="og:image" content="LOGO LE MESSAGE.png" />
   <meta property="og:type" content="website" />
 
-  <!-- Font Awesome (icônes réseaux sociaux) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
@@ -25,6 +25,7 @@
       --secondary: #2a5298;
       --light: #f4f6fb;
       --dark: #1a1a1a;
+      --star: #fbbf24;
     }
 
     * { box-sizing: border-box; }
@@ -37,23 +38,31 @@
       line-height: 1.8;
     }
 
+    /* HERO */
     header {
       min-height: 100vh;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: 
+        linear-gradient(rgba(30,60,114,.7), rgba(42,82,152,.7)),
+        url("branham.jpg") center/cover no-repeat;
       color: #fff;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-      text-align: center;
+      justify-content: center;
       padding: 40px 20px;
     }
 
-    header img.cover {
-      width: 180px;
-      border-radius: 16px;
+    .hero-content {
+      text-align: center;
+      max-width: 900px;
+    }
+
+    .app-logo {
+      width: 130px;
       margin-bottom: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+      box-shadow: 0 15px 40px rgba(0,0,0,.4);
+      border-radius: 24px;
+      background: #fff;
+      padding: 10px;
     }
 
     header h1 {
@@ -64,31 +73,27 @@
     .certified {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      font-size: .95rem;
+      gap: 10px;
       margin-bottom: 15px;
     }
 
-    .certified span {
-      background: #1877f2;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-weight: bold;
-      font-size: .8rem;
+    .certified img {
+      width: 26px;
+      height: 26px;
     }
 
     header p {
-      max-width: 750px;
       font-size: 1.15rem;
       opacity: .95;
+      margin-bottom: 25px;
     }
 
     .stats {
       display: flex;
-      gap: 30px;
-      margin: 30px 0;
-      flex-wrap: wrap;
+      gap: 35px;
       justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
     }
 
     .stat strong {
@@ -96,18 +101,14 @@
       font-size: 1.2rem;
     }
 
-    .btn-play {
-      margin-top: 20px;
-      background: #fff;
-      padding: 14px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
-      transition: transform .3s ease;
+    .stars {
+      color: var(--star);
+      font-size: 1.1rem;
     }
 
-    .btn-play:hover {
-      transform: translateY(-4px);
+    .btn-play img {
+      width: 160px;
+      margin-top: 10px;
     }
 
     section {
@@ -147,7 +148,7 @@
 
     .screenshots img {
       width: 100%;
-      border-radius: 14px;
+      border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0,0,0,.15);
     }
 
@@ -204,28 +205,46 @@
 <body>
 
 <header>
-  <img src="branham.jpg" alt="William Marrion Branham" class="cover">
+  <div class="hero-content">
+    <img src="LOGO LE MESSAGE.png" alt="Logo Le Message" class="app-logo">
 
-  <h1>Le Message du Temps de la Fin</h1>
+    <h1>Le Message du Temps de la Fin</h1>
 
-  <div class="certified">
-    <span>✔ Certifié</span> Bleu officiel
+    <div class="certified">
+      <img src="verified-badge.png" alt="Application certifiée">
+      <span>Application certifiée</span>
+    </div>
+
+    <p>
+      Application Android officielle dédiée au Message du Temps de la Fin,
+      avec toutes les citations du prophète William Marrion Branham.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>100 000+</strong>
+        Téléchargements
+      </div>
+      <div class="stat">
+        <strong class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </strong>
+        Note 5.0
+      </div>
+      <div class="stat">
+        <strong>76 Mo</strong>
+        Taille
+      </div>
+    </div>
+
+    <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.urbasoft.lemessage" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible sur Google Play">
+    </a>
   </div>
-
-  <p>
-    Application Android officielle dédiée au Message du Temps de la Fin,
-    avec toutes les citations du prophète William Marrion Branham.
-  </p>
-
-  <div class="stats">
-    <div class="stat"><strong>100 000+</strong>Téléchargements</div>
-    <div class="stat"><strong>★★★★★</strong>Note 5.0</div>
-    <div class="stat"><strong>76 Mo</strong>Taille</div>
-  </div>
-
-  <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.urbasoft.lemessage" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="150" alt="Google Play">
-  </a>
 </header>
 
 <section>
@@ -260,12 +279,12 @@
   <h2>Description détaillée</h2>
   <div class="detail-content">
     <p><strong>Le Message du Temps de la Fin</strong> est une application Android entièrement dédiée au Message du prophète William Marrion Branham.</p>
-    <p>Elle permet d’accéder à toutes les citations officielles avec trois traductions majeures : VGR, SHP et SUISSE.</p>
+    <p>Elle donne accès à toutes les citations officielles avec trois traductions : VGR, SHP et SUISSE.</p>
     <p>Un moteur de recherche intelligent permet de retrouver rapidement une citation précise sans ralentir le téléphone.</p>
-    <p>La fonction de soulignage avancé sauvegarde automatiquement vos passages importants, même après un changement de téléphone.</p>
-    <p>Les citations peuvent être exportées et partagées facilement sur les réseaux sociaux.</p>
-    <p>L’utilisateur peut personnaliser l’arrière-plan, la taille du texte et la police pour une lecture confortable.</p>
-    <p>Une fonction audio intégrée permet d’écouter le Message à tout moment.</p>
+    <p>Les soulignages sont sauvegardés de manière sécurisée, même après un changement de téléphone.</p>
+    <p>Les citations peuvent être exportées et partagées sur les réseaux sociaux.</p>
+    <p>Personnalisation complète : arrière-plan, taille du texte et police.</p>
+    <p>Fonction audio intégrée pour écouter le Message à tout moment.</p>
     <p>Avec plus de 100 000 téléchargements et une note de 5 étoiles, l’application est une référence moderne et fiable.</p>
   </div>
 </section>
@@ -277,7 +296,7 @@
     <a href="#"><i class="fab fa-x-twitter"></i></a>
     <a href="#"><i class="fab fa-tiktok"></i></a>
     <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></ a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
   </div>
 </footer>
 
